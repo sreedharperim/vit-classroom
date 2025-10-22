@@ -9,6 +9,7 @@ export default function Login()
                          await login(email,password);
                          
                          const base = process.env.PUBLIC_URL || '/vitclass';
+                         console.log(`Redirecting to ${base}`);
                          window.location.href = `${base}/#/`;
                          //window.location.href='/#/'; 
                         };
