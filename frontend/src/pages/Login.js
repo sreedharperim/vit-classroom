@@ -10,6 +10,7 @@ export default function Login()
                          
                          const base = process.env.PUBLIC_URL || '/vitclass';
                          window.location.href = `${base}/#/`;
-                         //window.location.href='/#/'; };
+                         //window.location.href='/#/'; 
+                        };
   
   return (<div className='center-container'><h2>Sign in</h2><form onSubmit={submit} className='card'><input value={email} onChange={e=>setEmail(e.target.value)} placeholder='email' className='w-full p-2 border rounded' /><input type='password' value={password} onChange={e=>setPassword(e.target.value)} placeholder='password' className='w-full p-2 border rounded' /><div style={{marginTop:8}}><button className='btn btn-primary' type='submit'>Sign in</button></div></form></div>) }
